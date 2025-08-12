@@ -111,15 +111,30 @@ function createFolderNode(
   const folderPath = node.slug
   folderContainer.dataset.folderpath = folderPath
 
+  // === [여기서 파일 개수 표시 추가] ===
+  // 1. .folder-count span 찾기
+  const folderCountSpan = titleContainer.querySelector(".folder-count") as HTMLSpanElement
+  if (folderCountSpan) {
+    // 2. 자식 중 파일(isFolder가 false) 개수 세기
+    const fileCount = node.children.filter(child => !child.isFolder).length
+    folderCountSpan.textContent = ` (${fileCount})`
+  }
+  // === [여기까지] ===
+
   if (opts.folderClickBehavior === "link") {
-    // Replace button with link for link behavior
     const button = titleContainer.querySelector(".folder-button") as HTMLElement
+    const folderCountSpan = button.querySelector(".folder-count") as HTMLSpanElement
     const a = document.createElement("a")
     a.href = resolveRelative(currentSlug, folderPath)
     a.dataset.for = folderPath
     a.className = "folder-title"
     a.textContent = node.displayName
-    button.replaceWith(a)
+
+    // folder-count를 a 뒤에 붙이기
+    const wrapper = document.createElement("span")
+    wrapper.appendChild(a)
+    if (folderCountSpan) wrapper.appendChild(folderCountSpan)
+    button.replaceWith(wrapper)
   } else {
     const span = titleContainer.querySelector(".folder-title") as HTMLElement
     span.textContent = node.displayName
@@ -140,6 +155,7 @@ function createFolderNode(
     folderOuter.classList.add("open")
   }
 
+  // 자식 폴더/파일 생성
   for (const child of node.children) {
     const childNode = child.isFolder
       ? createFolderNode(currentSlug, child, opts)
@@ -284,6 +300,26 @@ document.addEventListener("nav", async (e: CustomEventMap["nav"]) => {
 
     mobileExplorer.classList.remove("hide-until-loaded")
   }
+
+  updateFolderCounts()
+})
+
+// Add this to update counts when page loads
+document.addEventListener('nav', () => {
+  const explorer = document.getElementById('explorer')
+  if (explorer) {
+    const folders = explorer.querySelectorAll('.folder-container') as NodeListOf<HTMLElement>
+    folders.forEach((folder) => {
+      const contentUl = folder.querySelector('.folder-outer > .content') as HTMLUListElement
+      if (contentUl) {
+        const fileCount = contentUl.querySelectorAll(':scope > li').length
+        const countSpan = folder.querySelector('.folder-button .folder-count') as HTMLSpanElement
+        if (countSpan) {
+          countSpan.textContent = ` (${fileCount})`
+        }
+      }
+    })
+  }
 })
 
 window.addEventListener("resize", function () {
@@ -296,6 +332,41 @@ window.addEventListener("resize", function () {
   }
 })
 
-function setFolderState(folderElement: HTMLElement, collapsed: boolean) {
-  return collapsed ? folderElement.classList.remove("open") : folderElement.classList.add("open")
+function setFolderState(
+  folderElement: HTMLElement,
+  collapsed: boolean,
+) {
+  // Add folder count update function
+  function updateFolderCount(folderEl: HTMLElement) {
+    const contentUl = folderEl.querySelector('.folder-outer > .content') as HTMLUListElement
+    if (contentUl) {
+      const fileCount = contentUl.querySelectorAll(':scope > li').length
+      const countSpan = folderEl.querySelector('.folder-button .folder-count') as HTMLSpanElement
+      if (countSpan) {
+        countSpan.textContent = ` (${fileCount})`
+      }
+    }
+  }
+
+  // Update counts when folders are processed
+  folders.forEach((folder) => {
+    // ...existing code...
+    
+    // Add this line to update count
+    updateFolderCount(folder)
+  })
+}
+
+function updateFolderCounts() {
+  const folders = document.querySelectorAll('.folder-container')
+  folders.forEach(folder => {
+    const contentList = folder.closest('li')?.querySelector('ul.content')
+    if (contentList) {
+      const fileCount = contentList.querySelectorAll('li > a').length
+      const countSpan = folder.querySelector('.folder-count')
+      if (countSpan) {
+        countSpan.textContent = `(${fileCount})`
+      }
+    }
+  })
 }

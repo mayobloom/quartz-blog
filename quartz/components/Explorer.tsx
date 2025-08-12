@@ -147,6 +147,7 @@ export default ((userOpts?: Partial<Options>) => {
               <div>
                 <button class="folder-button">
                   <span class="folder-title"></span>
+                  <span class="folder-count"></span>
                 </button>
               </div>
             </div>
