@@ -8,6 +8,3 @@ draft: false
 aliases:
   - O/D추정
 ---
-![[Pasted image 20250813230124.png]]![[a8111903f611081de2d85e2de0296e58.gif]]
-
-
