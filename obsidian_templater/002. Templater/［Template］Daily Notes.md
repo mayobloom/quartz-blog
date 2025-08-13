@@ -1,8 +1,8 @@
 ---
-date: <% tp.date.now("YYYYMMDDHHmmss") %>
+date: <% tp.date.now("YYYY-MM-DD") %>
 tags: 
 aliases: 
-cssClass: 
+cssclasses: 
 publish:
 ---
 <%*
