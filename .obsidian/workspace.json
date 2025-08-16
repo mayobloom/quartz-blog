@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/수학적 기초/선형대수/2025-08-16 214101.md",
+                "file": "2025-08-17 043005.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-16 214101"
+              "title": "2025-08-17 043005"
             }
           }
         ]
@@ -102,8 +102,8 @@
             "state": {
               "type": "recent-files",
               "state": {},
-              "icon": "clock",
-              "title": "Recent Files"
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -112,7 +112,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "content/수학적 기초/선형대수/2025-08-16 214101.md",
+                "file": "2025-08-17 043005.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -140,7 +140,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 2025-08-16 214101"
+              "title": "Graph of 2025-08-17 043005"
             }
           }
         ],
@@ -148,7 +148,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 503.5
+    "width": 225.5
   },
   "right": {
     "id": "a031ca335ee2ae3e",
@@ -235,7 +235,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 388.5
+    "width": 287.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -245,14 +245,15 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "templater-obsidian:Templater": false
     }
   },
   "active": "c3de847eee6c19a9",
   "lastOpenFiles": [
-    "content/index.md",
     "content/수학적 기초/선형대수/2025-08-16 214101.md",
+    "2025-08-17 043005.md",
+    "content/index.md",
     "content/Materials/2025-08-16 192153.md",
     "obsidian_templater/002. Templater/［Template］Literature(Reference) Note.md",
     "obsidian_templater/002. Templater/［Template］Idea(Insight) Note.md",
@@ -286,7 +287,6 @@
     "obsidian_templater/002. Templater/Literature Note.md",
     "obsidian_templater/002. Templater/［Template］Daily Notes.md",
     "2025-08-15 230407.md",
-    "obsidian_templater/001. Formatting/［Formatting］이탤릭(Italic).md",
     "Pasted image 20250814011743.jpg",
     "Pasted image 20250814011407.jpg",
     "Pasted image 20250814002403.png",
