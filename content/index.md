@@ -1,5 +1,5 @@
 ---
-title: Welcom to mayotransit's blog!
+title: Welcome to mayotransit's blog!
 tags:
   - 소개
   - 메인
