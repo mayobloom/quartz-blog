@@ -1,6 +1,10 @@
 {
   "recentFiles": [
     {
+      "basename": "2025-08-16 214101",
+      "path": "2025-08-16 214101.md"
+    },
+    {
       "basename": "index",
       "path": "content/index.md"
     },
@@ -9,80 +13,20 @@
       "path": "content/Materials/2025-08-16 192153.md"
     },
     {
-      "basename": "［Template］Blog Post",
-      "path": "obsidian_templater/002. Templater/［Template］Blog Post.md"
+      "basename": "［Template］Literature(Reference) Note",
+      "path": "obsidian_templater/002. Templater/［Template］Literature(Reference) Note.md"
     },
     {
       "basename": "［Template］Idea(Insight) Note",
       "path": "obsidian_templater/002. Templater/［Template］Idea(Insight) Note.md"
     },
     {
-      "basename": "［Template］Literature(Reference) Note",
-      "path": "obsidian_templater/002. Templater/［Template］Literature(Reference) Note.md"
-    },
-    {
-      "basename": "［Formatting］이탤릭(Italic)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］이탤릭(Italic).md"
-    },
-    {
-      "basename": "［Formatting］옵시디언 (위키)링크, 노트 생성, 노트 추가",
-      "path": "obsidian_templater/001. Formatting/［Formatting］옵시디언 (위키)링크, 노트 생성, 노트 추가.md"
-    },
-    {
-      "basename": "［Formatting］이미지(Image)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］이미지(Image).md"
-    },
-    {
-      "basename": "［Formatting］인용, 콜아웃(Quote, Callout)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］인용, 콜아웃(Quote, Callout).md"
-    },
-    {
-      "basename": "［Formatting］각주(Footnote)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］각주(Footnote).md"
-    },
-    {
-      "basename": "［Formatting］굵게(Bold)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］굵게(Bold).md"
+      "basename": "［Template］Blog Post",
+      "path": "obsidian_templater/002. Templater/［Template］Blog Post.md"
     },
     {
       "basename": "［Formatting］글자 색상(Font Color)",
       "path": "obsidian_templater/001. Formatting/［Formatting］글자 색상(Font Color).md"
-    },
-    {
-      "basename": "［Formatting］밑줄(Underline)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］밑줄(Underline).md"
-    },
-    {
-      "basename": "［Formatting］제목2(Heading2)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］제목2(Heading2).md"
-    },
-    {
-      "basename": "［Formatting］체크박스, 할 일(Checkbox, Task)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］체크박스, 할 일(Checkbox, Task).md"
-    },
-    {
-      "basename": "［Formatting］표(Table)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］표(Table).md"
-    },
-    {
-      "basename": "［Formatting］하이라이트(Highlight)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］하이라이트(Highlight).md"
-    },
-    {
-      "basename": "［Formatting］현재시각, 타임스탬프(Timestamp)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］현재시각, 타임스탬프(Timestamp).md"
-    },
-    {
-      "basename": "［Formatting］Anki：Set Cloze",
-      "path": "obsidian_templater/001. Formatting/［Formatting］Anki：Set Cloze.md"
-    },
-    {
-      "basename": "contents",
-      "path": "pages/contents.md"
-    },
-    {
-      "basename": "［Formatting］하이퍼링크(Hyperlink)",
-      "path": "obsidian_templater/001. Formatting/［Formatting］하이퍼링크(Hyperlink).md"
     }
   ],
   "omittedPaths": [],
