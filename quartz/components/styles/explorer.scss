@@ -282,3 +282,19 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
     overscroll-behavior: none;
   }
 }
+
+/* '더 보기' 버튼 스타일 */
+.show-more {
+  color: var(--gray);
+  cursor: pointer;
+  padding: 0.25rem 0 0.25rem 0.8rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  list-style: none;
+  margin-top: 4px;
+  width: fit-content;
+
+  &:hover {
+    color: var(--tertiary);
+  }
+}

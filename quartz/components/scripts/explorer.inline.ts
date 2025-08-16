@@ -163,6 +163,43 @@ function createFolderNode(
     ul.appendChild(childNode)
   }
 
+  // === [글 목록 5개 초과 시 '더 보기' 버튼 추가] ===
+  const children = Array.from(ul.children) as HTMLLIElement[]
+  const limit = 5 // 표시할 최대 아이템 개수
+  if (children.length > limit) {
+    // 초기에 limit 개수 초과하는 아이템 숨기기
+    for (let i = limit; i < children.length; i++) {
+      children[i].style.display = "none"
+    }
+
+    // '더 보기' 버튼 생성
+    const showMoreLi = document.createElement("li")
+    showMoreLi.textContent = `... ${children.length - limit} more`
+    showMoreLi.classList.add("show-more")
+    ul.appendChild(showMoreLi)
+
+    // '더 보기' 버튼 클릭 이벤트 핸들러 추가
+    showMoreLi.addEventListener("click", (e) => {
+      e.stopPropagation() // 이벤트 버블링 방지
+      // 현재 모든 아이템이 표시되고 있는지 확인
+      const showingAll = children[limit].style.display !== "none"
+      if (showingAll) {
+        // 모든 아이tem이 표시된 상태 -> 다시 숨기기
+        for (let i = limit; i < children.length; i++) {
+          children[i].style.display = "none"
+        }
+        showMoreLi.textContent = `... ${children.length - limit} more`
+      } else {
+        // 숨겨진 상태 -> 모든 아이템 표시하기
+        for (let i = limit; i < children.length; i++) {
+          children[i].style.display = ""
+        }
+        showMoreLi.textContent = "Show less"
+      }
+    })
+  }
+  // === [여기까지] ===
+
   return li
 }
 
