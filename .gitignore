@@ -5,6 +5,9 @@ public
 prof
 tsconfig.tsbuildinfo
 .obsidian/plugins/s3-image-uploader/data.json
+.obsidian/plugins/recent-files-obsidian/data.json
+.obsidian/workspace.json
+.obsidian/hotkeys.json
 .quartz-cache
 private/
 .replit
