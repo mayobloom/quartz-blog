@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Materials/2025-08-16 192153.md",
+                "file": "content/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2025-08-16 192153"
+              "title": "index"
             }
           }
         ]
@@ -112,7 +112,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "content/Materials/2025-08-16 192153.md",
+                "file": "content/index.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -140,7 +140,7 @@
                 }
               },
               "icon": "lucide-git-fork",
-              "title": "Graph of 2025-08-16 192153"
+              "title": "Graph of index"
             }
           }
         ],
@@ -251,10 +251,10 @@
   },
   "active": "bfa6fdf3c0e111cf",
   "lastOpenFiles": [
+    "content/Materials/2025-08-16 192153.md",
     "content/수학적 기초/확률통계",
     "content/수학적 기초/선형대수",
     "content/index.md",
-    "content/Materials/2025-08-16 192153.md",
     "obsidian_templater/002. Templater/［Template］Blog Post.md",
     "content/데이터 분석",
     "content/인공지능과 활용",
@@ -274,7 +274,6 @@
     "content/A/빈 파일.md",
     "content/Materials",
     "quartz/components/styles/embed.scss",
-    "quartz/components/Embed.tsx",
     "content/전공/수학적 기초/OD추정.md",
     "content/전공/수학적 기초/수요추정.md",
     "content/전공/수학적 기초/새로운 테스트.md",
