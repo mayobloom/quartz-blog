@@ -4,7 +4,7 @@ node_modules
 public
 prof
 tsconfig.tsbuildinfo
-.obsidian
+.obsidian/plugins/s3-image-uploader/data.json
 .quartz-cache
 private/
 .replit
