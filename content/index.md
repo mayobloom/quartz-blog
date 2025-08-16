@@ -1,11 +1,11 @@
 ---
-title: mayobloom's blog
+title: Welcom to mayotransit's blog!
 tags:
   - 소개
   - 메인
 ---
 
-안녕하세요? mayobloom 입니다.
+안녕하세요? mayotransit 입니다.
 
 `Publishing Timestamp : 20250813_175724`
 `Last Modified : -`

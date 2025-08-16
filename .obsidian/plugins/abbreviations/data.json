@@ -1,0 +1,39 @@
+{
+  "abbreviations": {
+    "->": {
+      "value": "→",
+      "isEnabled": true,
+      "position": 0
+    },
+    "<-": {
+      "value": "←",
+      "isEnabled": true,
+      "position": 1
+    },
+    "<->": {
+      "value": "↔",
+      "isEnabled": true,
+      "position": 2
+    },
+    "=>": {
+      "value": "⇒",
+      "isEnabled": true,
+      "position": 3
+    },
+    "<=": {
+      "value": "⇐",
+      "isEnabled": true,
+      "position": 4
+    },
+    "<=>": {
+      "value": "⇔",
+      "isEnabled": true,
+      "position": 5
+    },
+    "...": {
+      "value": "···",
+      "isEnabled": true,
+      "position": 6
+    }
+  }
+}
