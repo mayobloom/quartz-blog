@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2025-08-17 043005.md",
+                "file": "content/수학적 기초/선형대수/2025-08-17 043005.md",
                 "mode": "source",
                 "source": false
               },
@@ -112,7 +112,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "2025-08-17 043005.md",
+                "file": "content/수학적 기초/선형대수/2025-08-17 043005.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -249,10 +249,10 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "c3de847eee6c19a9",
+  "active": "c2da530392f88cef",
   "lastOpenFiles": [
     "content/수학적 기초/선형대수/2025-08-16 214101.md",
-    "2025-08-17 043005.md",
+    "content/수학적 기초/선형대수/2025-08-17 043005.md",
     "content/index.md",
     "content/Materials/2025-08-16 192153.md",
     "obsidian_templater/002. Templater/［Template］Literature(Reference) Note.md",
