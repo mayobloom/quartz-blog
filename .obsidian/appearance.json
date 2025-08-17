@@ -2,8 +2,9 @@
   "enabledCssSnippets": [
     "quartz"
   ],
-  "accentColor": "#80bcd6",
+  "accentColor": "#92b8c8",
   "cssTheme": "",
-  "baseFontSize": 20,
-  "baseFontSizeAction": false
+  "baseFontSize": 16,
+  "baseFontSizeAction": false,
+  "theme": "obsidian"
 }
