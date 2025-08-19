@@ -1,0 +1,30 @@
+views:
+  - type: table
+    name: Main
+    filters:
+      and:
+        - "!title.isEmpty()"
+    order:
+      - title
+      - tags
+      - file.ctime
+      - file.mtime
+      - draft
+      - file.name
+    sort:
+      - property: file.ctime
+        direction: DESC
+      - property: title
+        direction: ASC
+    columnSize:
+      note.title: 380
+      note.tags: 337
+      file.ctime: 188
+      file.mtime: 197
+  - type: cards
+    name: View
+    order:
+      - file.name
+    cardSize: 360
+    imageFit: ""
+    imageAspectRatio: 1

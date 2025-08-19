@@ -173,7 +173,7 @@ button.desktop-explorer {
     font-family: var(--headerFont);
     font-size: 1.05rem;
     font-weight: $normalWeight;
-    line-height: 2.0rem;
+    line-height: 2.25rem;  // 행간 증가
     display: inline-block;
   }
 

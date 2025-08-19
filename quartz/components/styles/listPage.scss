@@ -10,22 +10,57 @@ li.section-li {
   margin-bottom: 1em;
 
   & > .section {
-    display: grid;
-    grid-template-columns: fit-content(12em) 3fr 1fr;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
 
-    @media all and ($mobile) {
-      & > .tags {
-        display: none;
+    & > .meta {
+      margin: 0;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    & > .desc {
+      margin: 0;
+      
+      & > h3 {
+        margin: 0;
+        
+        & > a {
+          background-color: transparent;
+        }
       }
     }
 
-    & > .desc > h3 > a {
-      background-color: transparent;
-    }
+    & > .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      justify-content: flex-start;
 
-    & .meta {
-      margin: 0 1em 0 0;
-      opacity: 0.6;
+      & > li {
+        margin: 0;
+        padding: 0;
+        
+        & > a.internal.tag-link {
+          display: inline-block;
+          padding: 0.2rem 0.4rem;
+          background-color: var(--highlight);
+          border-radius: 4px;
+          font-size: 0.85rem;
+          color: var(--dark);
+          text-decoration: none;
+          transition: background-color 0.15s ease;
+
+          &:hover {
+            background-color: var(--secondary);
+            color: var(--light);
+          }
+        }
+      }
     }
   }
 }
