@@ -6,6 +6,7 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiDatabase",
       "LiBookTemplate",
       "LiTemplaterIcon",
       "LiClipboardSignature"
@@ -33,5 +34,6 @@
     "useInternalPlugins": false
   },
   "content": "LiClipboardSignature",
-  "obsidian_templater": "LiBookTemplate"
+  "obsidian_templater": "LiBookTemplate",
+  "Bases.base": "LiDatabase"
 }

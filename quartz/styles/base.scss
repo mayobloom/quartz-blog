@@ -23,6 +23,12 @@ body {
   background-color: var(--textHighlight);
   padding: 0 0.1rem;
   border-radius: 5px;
+}html {
+  scroll-behavior: smooth;
+  text-size-adjust: none;
+  overflow-x: hidden;
+  width: 100vw;
+  font-size: 17.6px; // 10% 증가 (16px * 1.1)
 }
 ::selection {
   background: color-mix(in srgb, var(--tertiary) 60%, rgba(255, 255, 255, 0));
@@ -42,6 +48,12 @@ ul,
 .math {
   color: var(--darkgray);
   fill: var(--darkgray);
+}
+
+// 리스트 아이템 행간 조정
+ul li, ol li {
+  line-height: 1.5;
+  margin: 0.5rem 0;
   hyphens: auto;
 }
 
@@ -165,6 +177,8 @@ a {
   max-width: calc(#{map.get($breakpoints, desktop)} + 300px);
   margin: 0 auto;
   & article {
+    line-height: 1.5;
+    
     & > h1 {
       font-size: 2rem;
     }

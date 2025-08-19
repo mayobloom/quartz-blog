@@ -43,9 +43,18 @@ export default ((opts?: Partial<ContentMetaOptions>) => {
       }
 
       return (
-        <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
-          {segments}
-        </p>
+        <div class="content-meta-wrapper">
+          <p show-comma={options.showComma} class={classNames(displayClass, "content-meta")}>
+            {segments}
+          </p>
+          {fileData.frontmatter?.tags && (
+            <div class="tags-wrapper">
+              {fileData.frontmatter.tags.map((tag) => (
+                <a href={`/tags/${tag}`} class="tag-item">{tag}</a>
+              ))}
+            </div>
+          )}
+        </div>
       )
     } else {
       return null

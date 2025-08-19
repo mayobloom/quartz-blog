@@ -3,6 +3,8 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { Date, getDate } from "./Date"
 import { QuartzComponent, QuartzComponentProps } from "./types"
 import { GlobalConfiguration } from "../cfg"
+import readingTime from "reading-time"
+import { i18n } from "../i18n"
 
 export type SortFn = (f1: QuartzPluginData, f2: QuartzPluginData) => number
 
@@ -86,6 +88,12 @@ export const PageList: QuartzComponent = ({ cfg, fileData, allFiles, limit, sort
                 {page.frontmatter?.description && (
                   <div class="description">{page.frontmatter.description}</div>
                 )}
+                {page.text && (
+                  <div class="reading-time">
+                    <span class="clock-icon">⏱️</span>
+                    {Math.ceil(readingTime(page.text).minutes)} min read
+                  </div>
+                )}
               </div>
               <ul class="tags">
                 {tags.map((tag) => (
@@ -112,7 +120,98 @@ PageList.css = `
   margin: 0;
 }
 
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.section > .meta {
+  order: 1;
+}
+
+.section > .desc {
+  order: 2;
+  
+  .reading-time {
+    font-size: 0.9rem;
+    color: var(--gray);
+    margin-top: 0.5rem;
+    
+    [saved-theme=light] & {
+      color: var(--darkgray);
+    }
+    
+    .clock-icon {
+      margin-right: 0.3rem;
+      font-size: 0.9rem;
+    }
+  }
+}
+
+.section > .tags {
+  order: 3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.section > .tags > li {
+  margin: 0;
+  padding: 0;
+}
+
+.section > .tags > li > a.internal.tag-link {
+  display: inline-block;
+  padding: 0.2rem 0.4rem;
+  background-color: var(--highlight);
+  border-radius: 4px;
+  font-size: 0.85rem;
+  color: var(--dark);
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.section > .tags > li > a.internal.tag-link:hover {
+  background-color: var(--secondary);
+  color: var(--light);
+}
+
+.section > .meta {
+  margin-bottom: 0.5rem;
+}
+
+.section > .desc {
+  margin-bottom: 0.8rem;
+}
+
 .section > .tags {
   margin: 0;
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.section > .tags > li {
+  display: inline-block;
+}
+
+.section > .tags > li > a.internal.tag-link {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--highlight);
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: var(--dark);
+  text-decoration: none;
+  transition: background-color 0.15s ease;
+}
+
+.section > .tags > li > a.internal.tag-link:hover {
+  background-color: var(--secondary);
+  color: var(--light);
 }
 `
