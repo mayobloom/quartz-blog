@@ -3,6 +3,9 @@
     "aliases": "aliases",
     "cssclasses": "multitext",
     "tags": "tags",
-    "type": "multitext"
+    "type": "multitext",
+    "Questions": "multitext",
+    "remainQuestion": "multitext",
+    "entryPoint": "multitext"
   }
 }
