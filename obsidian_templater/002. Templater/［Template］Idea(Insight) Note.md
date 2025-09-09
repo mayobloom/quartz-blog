@@ -14,5 +14,20 @@ await tp.file.move(`/${now}`);
 _%>
 
 > [!Example] 작성 흐름(읽으면 지워주세요)
-> 내 주장 → 근거 → 생각의 확장(추가 질문)
+> 내 주장 → 근거 → 비평,한계,보완점 → 출처
+
+# Argument
+---
+
+
+# Rationale
+---
+
+
+# Critique
+---
+
+
+# References
+---
 

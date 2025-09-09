@@ -12,3 +12,10 @@ type:
 const now = tp.date.now("YYYY-MM-DD HHmmss"); 
 await tp.file.move(`/${now}`); 
 _%>
+
+
+
+
+
+# References
+---
