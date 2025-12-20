@@ -13,20 +13,19 @@ const now = tp.date.now("YYYY-MM-DD HHmmss");
 await tp.file.move(`/${now}`); 
 _%>
 
-> [!Example] 작성 흐름(읽으면 지워주세요)
-> 내 주장 → 근거 → 비평,한계,보완점 → 출처
 
-# Argument
+# Definition
 ---
+## 정의1
 
 
-# Rationale
+## 정의2
+
+
+# Context
 ---
-
-
-# Critique
----
-
+## 다른 카드와 연관되는 이유에 대한 간략한 설명(필요조건, 동질/차별성)
+`[[다른 Material Card 태깅]]`
 
 # References
 ---

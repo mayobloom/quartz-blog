@@ -8,5 +8,6 @@
   "templater-obsidian",
   "s3-image-uploader",
   "obsidian-front-matter-title-plugin",
-  "abbreviations"
+  "abbreviations",
+  "dataview"
 ]
