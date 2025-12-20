@@ -23,7 +23,7 @@
   },
   "features": {
     "alias": {
-      "enabled": false,
+      "enabled": true,
       "strategy": "ensure",
       "validator": "fr",
       "templates": {
@@ -40,79 +40,79 @@
       }
     },
     "tab": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "header": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "graph": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "bookmarks": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "search": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "suggest": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "inlineTitle": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "canvas": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "backlink": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "windowFrame": {
-      "enabled": false,
+      "enabled": true,
       "templates": {
         "main": "",
         "fallback": ""
       }
     },
     "noteLink": {
-      "enabled": false,
+      "enabled": true,
       "strategy": "onlyEmpty",
-      "approval": true,
+      "approval": false,
       "templates": {
         "main": "",
         "fallback": ""

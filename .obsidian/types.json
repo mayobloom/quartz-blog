@@ -6,6 +6,7 @@
     "type": "multitext",
     "Questions": "multitext",
     "remainQuestion": "multitext",
-    "entryPoint": "multitext"
+    "entryPoint": "multitext",
+    "date": "date"
   }
 }
