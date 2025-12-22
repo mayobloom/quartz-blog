@@ -16,7 +16,7 @@
       "value": ""
     }
   },
-  "debug": false,
+  "debug": true,
   "boot": {
     "delay": 1000,
     "background": true
@@ -24,10 +24,10 @@
   "features": {
     "alias": {
       "enabled": true,
-      "strategy": "ensure",
+      "strategy": "adjust",
       "validator": "fr",
       "templates": {
-        "main": "",
+        "main": "title",
         "fallback": ""
       }
     },

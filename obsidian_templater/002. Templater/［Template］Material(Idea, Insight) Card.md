@@ -16,15 +16,15 @@ await tp.file.move(`/${now}`);
 _%>
 
 
-# Definition
+# Abstract
 ---
-## 정의1
+## 요약1
 
 
-## 정의2
+## 요약2
 
 
-# Context
+# Definition & Usage in various contexts
 ---
 ## 다른 카드와 연관되는 이유에 대한 간략한 설명(필요조건, 동질/차별성)
 `[[다른 Material Card 태깅]]`

@@ -120,3 +120,47 @@ a:hover {
 ::-webkit-scrollbar-thumb {
   background: var(--border);
 }
+
+/* 헤딩(Heading) 스타일 커스터마이징 */
+
+/* 1. 공통 구조 및 크기 설정 (계층감 강화) */
+.markdown-rendered h1, .markdown-rendered h2, 
+.markdown-rendered h3, .markdown-rendered h4, .markdown-rendered h5 {
+  font-weight: 800; /* 조금 더 두껍게 설정 */
+  line-height: 1.2;
+}
+
+.markdown-rendered h1 { font-size: 2.2em; border-bottom: 2px solid var(--border); padding-bottom: 0.3em; }
+.markdown-rendered h2 { font-size: 1.8em; border-bottom: 1px solid var(--border); padding-bottom: 0.2em; }
+.markdown-rendered h3 { font-size: 1.5em; margin-top: 1.4em; }
+.markdown-rendered h4 { font-size: 1.25em; font-style: italic; } /* H4에 기울임꼴 추가로 구분감 증대 */
+.markdown-rendered h5 { font-size: 1.1em; opacity: 0.9; }
+
+/* 2. 라이트 모드 (Light Mode): 선명한 원색 계열 대비 */
+.theme-light {
+  --h1-h2-color: #000000;       /* 완전한 검정 */
+  --h3-color: #0056b3;          /* 짙은 파랑 (Vivid Blue) */
+  --h4-color: #c44d00;          /* 짙은 주황 (Deep Orange) */
+  --h5-color: #2b7a0b;          /* 진한 초록 (Forest Green) */
+}
+
+/* 3. 다크 모드 (Dark Mode): 형광색 계열 고대비 */
+.theme-dark {
+  --h1-h2-color: #ffffff;       /* 완전한 흰색 */
+  --h3-color: #4fc3f7;          /* 스카이 블루 (Sky Blue) */
+  --h4-color: #ffb74d;          /* 밝은 오렌지 (Amber) */
+  --h5-color: #81c784;          /* 연한 초록 (Light Green) */
+}
+
+/* 4. 최종 색상 적용 */
+.markdown-rendered h1, 
+.markdown-rendered h2 { color: var(--h1-h2-color) !important; }
+
+.markdown-rendered h3 { 
+  color: var(--h3-color) !important;
+  border-left: 4px solid var(--h3-color); /* H3 옆에 세로선 추가로 구분감 극대화 */
+  padding-left: 10px;
+}
+
+.markdown-rendered h4 { color: var(--h4-color) !important; }
+.markdown-rendered h5 { color: var(--h5-color) !important; }
