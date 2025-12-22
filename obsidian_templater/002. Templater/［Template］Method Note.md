@@ -3,11 +3,11 @@ title: 제목을 입력하세요
 aliases:
 description:
 type:
-  - idea
+  - method_note
 draft: false
 tags:
 date: <% tp.date.now("YYYY-MM-DD") %>
-date_modified:
+date_modified: 2025-12-22
 ---
 
 <%* 
@@ -18,16 +18,20 @@ _%>
 
 # Abstract
 ---
-## 요약1
 
 
-## 요약2
-
-
-# Definition & Usage in various contexts
+# Why it matters to me & Usage
 ---
-## 다른 카드와 연관되는 이유에 대한 간략한 설명(필요조건, 동질/차별성)
-`[[다른 Material Card 태깅]]`
+
+
+# Prerequisites
+---
+
+
+# Comparisons & Relations
+---
+Relationship Properties
+- `Parent`, `Sibling`, `Opposite`, `Extension`
 
 # References
 ---
